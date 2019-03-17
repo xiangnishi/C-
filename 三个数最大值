@@ -5,17 +5,17 @@ using namespace std;
 
 int main()
 {
-    int max(int x, int y, int z);#函数调用，定义
-    int a,b,c,d;
-    scanf("%d,%d,%d",&a,&b,&c);
-    d=max(a,b,c);
-    printf("max=%d\n",d);
+    int max(int x, int y, int z); #申明被调用函数为int型
+    int a,b,c,d; #定义变量a,b,c,d
+    scanf("%d,%d,%d",&a,&b,&c); #键盘输入三个值到变量a,b,c中
+    d=max(a,b,c); #调用max函数，返回值给变量d
+    printf("max=%d\n",d); #打印变量d
     return 0;
 }
 
 int max(int x,int y,int z)
 {
-    int h;
+    int h; #用于接收比较后的最大值
     if(x>y)
     h=x;
     else
@@ -24,6 +24,10 @@ int max(int x,int y,int z)
     h=h;
     else
     h=z;
-    return h;
+    return h; #返回值
 }
+
+#函数主体+函数调用
+#编程自上而下进行
+
 
