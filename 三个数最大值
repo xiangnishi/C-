@@ -1,0 +1,29 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int max(int x, int y, int z);#函数调用，定义
+    int a,b,c,d;
+    scanf("%d,%d,%d",&a,&b,&c);
+    d=max(a,b,c);
+    printf("max=%d\n",d);
+    return 0;
+}
+
+int max(int x,int y,int z)
+{
+    int h;
+    if(x>y)
+    h=x;
+    else
+    h=y;
+    if(h>z)
+    h=h;
+    else
+    h=z;
+    return h;
+}
+
